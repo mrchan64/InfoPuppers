@@ -1,0 +1,38 @@
+doctype html
+html
+	head
+		title
+			|InfoPuppies
+			
+		link(href='public/style.css',rel='stylesheet')
+		link(rel="shortcut icon" type="image/png" href="public/pug.png")
+	body
+		//#thisisanid.thisisaclass
+	
+		
+		div.navbar
+			img.iconbackground(src="public/infopuppiesicon.png")
+			ul.liststuff 
+				li
+					a(href="some link here") Login 
+				li
+					a(href="/about") About
+
+		div.container
+			img.dogbackground(src="public/happydog.jpg")
+			div.top-left 
+				h1 Welcome to InfoPuppies
+				p  Type in the microchip ID to begin your search 	
+			//div.searchbutton
+				button(onclick='something()') Begin your search 
+			div.searchform
+				form(name="myForm" onsubmit="return validateForm()" method="post")  
+					input(type="text" name="fname")
+					input(type="submit" value="Search")
+			
+
+
+
+
+	
+
