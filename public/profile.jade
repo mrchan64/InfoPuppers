@@ -1,0 +1,75 @@
+doctype html
+html
+	head
+		title
+			|About InfoPuppies
+		
+		link(href='public/style.css',rel='stylesheet')
+		link(rel="shortcut icon" type="image/png" href="public/pug.png")
+	body
+		//#thisisanid.thisisaclass
+
+		div.navbar.navbarabout
+			a(href="/") 
+				img.iconbackground(src="public/infopuppiesicon2.png")
+			ul.liststuff 
+				li
+					a(href="some link here") Login 
+				li
+					a.aboutunder(href="/about") About
+		div.container.profiletitle
+			button(onclick='something()') Back to Results 
+		div.container.containerabout
+			img.blockchain(src="public/profiledog.png")
+		div.textabout
+			
+			div.tab
+				button.tablinks(onclick="openTab(event, 'Profile')") Profile
+				button.tablinks(onclick="openTab(event, 'Medical')") Medical History
+				button.tablinks(onclick="openTab(event, 'Files')") Files
+			
+
+			div#Profile.tabcontent
+				h3 Profile
+				div.block
+					p #123456789 
+					p Name: Mocha
+					p Breed: Pug
+					p Age: 2 and a half years
+					p Gender: Female
+					p Weight: 12 pounds
+
+			div#Medical.tabcontent
+				h3 Medical History
+				div.block
+					p Canine Influenza Virus H3N8/H3N2 (CIV)
+					p DA2PP
+					p Bordetella
+					p Rabies
+					p Deworming
+				div.block#right
+					p Administered 4/8/18 
+					p Administered 4/8/18 
+					p Administered 4/8/18 
+					p Administered 4/8/18 
+					p Administered 4/8/18 
+
+			div#Files.tabcontent
+				h3 Files 
+
+				//a(href="public/vaccinationrecord.jpg" download) vaccinationrecord.jpg
+				div.buttonwrapper
+					//button.button Upload a File
+					//input(type="file" name="myfile" id="files" class="hidden")
+					//label(for="files") Select file
+				input(type="file")
+				input(type="file")
+				input(type="file")
+				input(type="file")
+				input(type="file")
+				input(type="file")
+				input(type="file")
+		
+
+
+		script(src="public/tabs.js", type="text/javascript")
