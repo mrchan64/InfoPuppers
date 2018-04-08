@@ -1,0 +1,26 @@
+{
+  "name": "infopup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrchan64/InfoPuppers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrchan64/InfoPuppers/issues"
+  },
+  "homepage": "https://github.com/mrchan64/InfoPuppers#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "jade": "^1.11.0",
+    "ws": "^5.1.1"
+  }
+}
