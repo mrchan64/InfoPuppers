@@ -89,7 +89,7 @@ div.top-left h1 {
 	margin-top: 0;
 	font-size: 36px;
 	position: relative;
-	padding-top: 30%;
+	padding-top: 20%;
 	text-align: center;
 }
 
@@ -123,7 +123,7 @@ div.top-left p {
 }
 
 img.blockchain {
-	padding-top: 0;
+	margin-top: 5%;
 	width:100%;
 }
 
@@ -168,6 +168,7 @@ img.blockchain {
 
 /* Style the tab */
 .tab {
+	margin-top: 5%;
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: black;
@@ -211,6 +212,10 @@ img.blockchain {
 .tabcontent p {
 	font-family: Helvetica,sans-serif;
 
+}
+.tabcontent h2 {
+	font-size: 16px;
+	text-decoration: underline;
 }
 
 .block {
@@ -266,6 +271,63 @@ img.blockchain {
 	height: 20px;
 	border:0;
 	background-color: #919394;
+}
+
+.dropbtn {
+	font-family: Proxima Nova, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+	font-family: Proxima Nova, Helvetica, sans-serif;
+    background-color: grey;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+	font-family: Proxima Nova, Helvetica, sans-serif;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+	background-color: #ddd
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.show {display:block;}
+
+#abtbutton {
+    background-color: white;
+    color: black;
+}
+#abtbutton:hover {
+    background-color: grey;
+    color: white;
 }
 
 

@@ -14,9 +14,13 @@ html
 			img.iconbackground(src="public/infopuppiesicon.png")
 			ul.liststuff 
 				li
-					a(href="some link here") Login 
+					p Welcome, User 
 				li
-					a(href="/about") About
+					div.dropdown
+						button.dropbtn#abtbutton(onmouseover="myFunction()",onmouseout="myFunction()") About
+						div#myDropdown.dropdown-content
+							a(href="/about") What is InfoPuppies?
+							//a(href="/contact") Contact Us
 
 		div.container
 			img.dogbackground(src="public/happydog.jpg")
