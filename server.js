@@ -12,8 +12,9 @@ if(process.argv[2]=='server'){
   EXA.startClient(process.argv[2]);
   BCH.hookws(EXA.ws);
   EXA.newBlock = BCH.createNewBlock;
+  EXA.writeBlocks = BCH.writeBlockUpdates;
   IFD.setUp(BCH.getChain());
-  EXA.searchStream = IFD.constructDataStream
+  EXA.searchStream = IFD.constructDataStream;
 }else{
-  console.log('exiting')
+  console.log('exiting');
 }
