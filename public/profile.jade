@@ -14,11 +14,13 @@ html
 				img.iconbackground(src="public/infopuppiesicon2.png")
 			ul.liststuff 
 				li
-					a(href="some link here") Login 
+					p Welcome, User
 				li
-					a.aboutunder(href="/about") About
-		div.container.profiletitle
-			button(onclick='something()') Back to Results 
+					div.dropdown
+						button.dropbtn(onmouseover="myFunction()",onmouseout="myFunction()") About
+						div#myDropdown.dropdown-content
+							a(href="/about") What is InfoPuppies?
+
 		div.container.containerabout
 			img.blockchain(src="public/profiledog.png")
 		div.textabout
@@ -27,6 +29,7 @@ html
 				button.tablinks(onclick="openTab(event, 'Profile')") Profile
 				button.tablinks(onclick="openTab(event, 'Medical')") Medical History
 				button.tablinks(onclick="openTab(event, 'Files')") Files
+				button.tablinks(onclick="openTab(event, 'Owner')") Owner Information
 			
 
 			div#Profile.tabcontent
@@ -43,18 +46,31 @@ html
 
 			div#Medical.tabcontent
 				h3 Medical History
+				h2 Visit Records
+				div.block
+					p Deworming
+					p Rabies vaccination
+					p HomeAgain Microchip
+					p Spay
+				div.block#right
+					p Humane Society Silicon Valley
+					p Humane Society Silicon Valley
+					p Humane Society Silicon Valley
+					p Humane Society Silicon Valley
+				h2 Vaccinations
 				div.block
 					p Canine Influenza Virus H3N8/H3N2 (CIV)
 					p DA2PP
 					p Bordetella
-					p Rabies
 					p Deworming
+					p Rabies
 				div.block#right
 					p Administered 4/8/18 
 					p Administered 4/8/18 
 					p Administered 4/8/18 
 					p Administered 4/8/18 
 					p Administered 4/8/18 
+
 
 			div#Files.tabcontent
 				h3 Files 
@@ -71,6 +87,15 @@ html
 				input(type="file")
 				input(type="file")
 				input(type="file")
+			div#Owner.tabcontent
+				h3 Owner: John Smith
+				p  4/8//18 - Present
+				p  History: Recieved Mocha on 4/8/18 as adult female
+
+				h3 Owner: Jane Doe
+				p  4/7/18 - 4/8/18
+				p  History: Raised Mocha since she was a puppy. Adopted her from Humane Society Silicon Valley Animal Shelter
+
 		
 
 

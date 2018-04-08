@@ -1,0 +1,32 @@
+doctype html
+html
+	head
+		title
+			|About InfoPuppies
+		
+		link(href='public/style.css',rel='stylesheet')
+		link(rel="shortcut icon" type="image/png" href="public/pug.png")
+	body
+		//#thisisanid.thisisaclass
+
+		div.navbar.navbarabout
+			a(href="/") 
+				img.iconbackground(src="public/infopuppiesicon2.png")
+			ul.liststuff 
+				li
+					p Welcome, User
+				li
+					div.dropdown
+						button.dropbtn(onmouseover="myFunction()",onmouseout="myFunction()") About
+						div#myDropdown.dropdown-content
+							a(href="/about") What is InfoPuppies?
+							//a(href="/contact") Contact Us
+
+		div.container.title
+			h1 Contact Us
+		div.container.containerabout
+			img.blockchain(src="public/blockchain.jpg")
+			img.blockchain(src="public/microchip.jpg")
+		div.textabout
+			h2 Authors
+			p This is the 2018 HackXX Project created by Matthew Chan and Eunice Chan.
