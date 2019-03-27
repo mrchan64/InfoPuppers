@@ -1,6 +1,6 @@
 # InfoPuppies
 
-A 2018 HackXX Projet by Eunice Chan and Matthew Chan
+A 2018 HackXX Project by Eunice Chan and Matthew Chan. Won the 1st Place Northrop Gromman Communication and Design Award.
 
 # What's the problem?
 
